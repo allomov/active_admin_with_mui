@@ -1,24 +1,14 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is a demo application to show how to reproduce the situation described in [this issue](https://github.com/activeadmin/activeadmin/issues/7906).
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## Setup
+You need to have Ruby and Node installed. Then run the following commands:
+```
+bundle install
+yarn install
+rake db:create
+rake db:migrate
+rake db:seed
+./bin/dev
+```
